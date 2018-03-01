@@ -42,19 +42,15 @@ class Sphere:public Circle
 };
 Shape::Shape()
 {
-    cout <<"Constructing Shape " << std::endl;
 }
 Shape::~Shape()
 {
-    cout <<"Destroying Shape " << std::endl;
 }
 Circle::Circle()
 {
-    cout <<"Constructing Circle " << std::endl;
 }
 Circle::~Circle()
 {
-    cout <<"Destroying Circle " << std::endl;
 }
 void Circle::calculateArea(double r)
 {
@@ -64,11 +60,9 @@ void Circle::calculateArea(double r)
 }
 Sphere::Sphere()
 {
-    cout <<"Constructing Sphere " << std::endl;
 }
 Sphere::~Sphere()
 {
-    cout <<"Destroying Sphere " << std::endl;
 }
 void Sphere::calculateArea(int r)
 {
