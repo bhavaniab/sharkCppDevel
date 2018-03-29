@@ -68,12 +68,17 @@ double Sphere::volume()
 }
 int main()
 {
+    Shape *s;
     Cylinder cy1(2,3);
     Cylinder cy2(3,5);
     Sphere sp1(2);
     Sphere sp2(5);
-    cout << "volume of cylinder 1 " << cy1.volume() << std::endl;
-    cout << "volume of cylinder 2 " << cy2.volume() << std::endl;
-    cout << "volume of sphere 1 " << sp1.volume() << std::endl;    
+    
+    s=&cy1;
+    cout << "volume of cylinder 1 " << s->volume() << std::endl;
+    s=&cy2;
+    cout << "volume of cylinder 2 " << s->volume() << std::endl;
+    s=&sp1;
+    cout << "volume of sphere 1 " << s->volume() << std::endl;    
     return 0;
 }
