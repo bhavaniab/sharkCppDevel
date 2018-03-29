@@ -11,6 +11,8 @@ int main()
     d1 d1obj;
     d2 d2obj;
     d3 d3obj;
+    //base class pointer points to the derived class
+    //object
     basePtr = &d3obj;
     //basePtr = &baseObj;
     basePtr->displayDerived();
